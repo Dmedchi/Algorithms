@@ -19,8 +19,8 @@ if answer == 1:
     print(f'Cлучайное целое число: {number}')
 
 if answer == 2:
-    one = input('Введите 1 символ  от "а" до "f": ')
-    two = input('Введите символ  от "а" до "f": ')
+    one = input('Введите 1 символ  от "а" до "z": ')
+    two = input('Введите символ  от "а" до "z": ')
     one = ord(one)
     two = ord(two)
     symbol = random.randint(one, two)
