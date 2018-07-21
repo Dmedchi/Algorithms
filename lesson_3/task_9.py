@@ -4,11 +4,11 @@ from random import random
 
 matrix = []
 for i in range(4):
-    list = []
+    list_ = []
     for k in range(5):
         number = int(random() * 100)
-        list.append(number)
-    matrix.append(list)
+        list_.append(number)
+    matrix.append(list_)
 
 for i in matrix:
     print(i)
