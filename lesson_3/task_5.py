@@ -3,22 +3,22 @@
 # Вывести на экран его значение и позицию в массиве.
 
 from random import random
+N = 10
+list_ = []
 
-list = []
-
-for i in range(10):
-    list.append(int(random() * 10) - 10)
-print(list)
+for i in range(N):
+    list_.append(int(random() * N) - N)
+print(list_)
 
 number = 0
-index = -1
-while number < 10:
-    if list[number] < 0 and index == -1:
-        index = number
-    elif list[number] < 0 and list[number] > list[index]:
-        index = number
+index_ = -1
+while number < N:
+    if list_[number] < 0 and index_ == -1:
+        index_ = number
+    elif list_[number] < 0 and list_[number] > list_[index_]:
+        index_ = number
     number += 1
 
-print(f'\nmax отрицательный элемент: {list[index]}')
-print(f'       позиция:            [{index}]')
+print(f'\nmax отрицательный элемент: {list_[index_]}')
+print(f'       позиция:            [{index_}]')
 
