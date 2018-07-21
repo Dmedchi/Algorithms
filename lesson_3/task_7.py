@@ -3,21 +3,21 @@
 
 from random import random
 
-list = []
+list_ = []
 for i in range(10):
-    list.append(int(random() * 100))
+    list_.append(int(random() * 100))
 
-print(list)
+print(list_)
 
-mn1 = min(list)
-imn1 = list.index(mn1)
+mn1 = min(list_)
+imn1 = list_.index(mn1)
 
-min1 = list.pop(imn1)
+min1 = list_.pop(imn1)
 
-mn2 = min(list)
+mn2 = min(list_)
 
-list.insert(imn1, min1)
-imn2 = list.index(mn2)
+list_.insert(imn1, min1)
+imn2 = list_.index(mn2)
 
 
 print(f'\nMin1: {mn1} [{imn1}]')
