@@ -5,15 +5,15 @@
 matrix = []
 
 for i in range(4):
-    list = []
+    list_ = []
     summa = 0
     print(f'Строка {i + 1}: ')
     for k in range(4):
         number = int(input('>> '))
         summa += number
-        list.append(number)
-    list.append(summa)
-    matrix.append(list)
+        list_.append(number)
+    list_.append(summa)
+    matrix.append(list_)
 
 for i in matrix:
     print(i)
