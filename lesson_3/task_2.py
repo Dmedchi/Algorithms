@@ -6,15 +6,16 @@
 
 from random import random
 
-list = [0] * 10
-index = []
+N = 10
+list_ = [0] * N
+index_ = []
 
-for i in range(10):
-    list[i] = int(random() * 100) + 10
-    if list[i] % 2 == 0:
-        index.append(i)
+for i in range(N):
+    list_[i] = int(random() * 100) + N
+    if list_[i] % 2 == 0:
+        index_.append(i)
 
-print(f'Массив: {list}')
-print(f'Индексы четных элементов: {index}')
+print(f'Массив: {list_}')
+print(f'Индексы четных элементов: {index_}')
 
 
