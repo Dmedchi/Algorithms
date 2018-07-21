@@ -3,24 +3,25 @@
 
 from random import random
 
-list = [0] * 10
+N = 10
+list_ = [0] * N
 
-for i in range(10):
-    list[i] = int(random() * 100)
-    print(list[i], end='  ')
+for i in range(N):
+    list_[i] = int(random() * 100)
+    print(list_[i], end='  ')
 
-minimum = min(list)
-maximum = max(list)
+minimum = min(list_)
+maximum = max(list_)
 
-index_min = list.index(minimum)
-index_max = list.index(maximum)
+index_min = list_.index(minimum)
+index_max = list_.index(maximum)
 
 print(f'\nMin: {minimum} - [{index_min}]\nMax: {maximum} - [{index_max}]')
 
-list[index_min], list[index_max] = list[index_max], list[index_min]
+list_[index_min], list_[index_max] = list_[index_max], list_[index_min]
 
 for i in range(10):
-    print(list[i], end='  ')
+    print(list_[i], end='  ')
 
 
 
