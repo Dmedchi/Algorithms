@@ -23,7 +23,7 @@ while i < 10:
         continue
     elif n < number:
         print('Ваше число меньше загаданного.\n')
-        continue
+
 
 
 
