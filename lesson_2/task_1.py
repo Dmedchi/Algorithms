@@ -28,7 +28,7 @@ while True:
             print(f'Ответ: {one / two}')
         else:
             print('Ошибка. На "0" делить нельзя!')
-            continue
+
 
 
 
