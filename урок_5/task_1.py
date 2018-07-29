@@ -7,15 +7,26 @@ companies = {}
 
 num = int(input('Количество предприятий: '))
 summa = 0
+# name = []
 for i in range(num):
+    s = 0
+    profit = 0
     name = input(f'Предприятие №{i + 1}: ')
-    profit = int(input('Прибыль: '))
+    # name.append(nm)
+    count = 1
+    while count < 5:
+        prft = int(input(f'Прибыль за {count} квартал: '))
+        profit += prft
+        count += 1
     companies[name] = profit
-    summa += profit
-print(companies)
+    s += profit
+    print(f'Итого за год: {s}')
+
+for key in companies:
+    summa += companies[key]
 
 average = summa / num
-print(f'\nСредняя прибыль за год для всех предприятий: {round(average, 2)}')
+print(f'Средняя прибыль за год для всех предприятий: {round(average, 2)}')
 
 good = {}
 bad = {}
@@ -25,10 +36,10 @@ for key in companies:
     else:
         bad[key] = companies[key]
 
-print('\nПредприятия, чья прибыль выше среднего: ')
+print('Предприятия, чья прибыль выше среднего: ')
 for key in good:
     print(f'{key} - {good[key]}')
 
-print('\nПредприятия, чья прибыль ниже среднего: ')
+print('Предприятия, чья прибыль ниже среднего: ')
 for key in bad:
     print(f'{key} - {bad[key]}')
