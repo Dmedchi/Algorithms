@@ -2,8 +2,7 @@
 # заданный случайными числами на промежутке [0; 50). Выведите на экран исходный и отсортированный массивы.
 import random
 
-N = 15
-array = [int(random.randint(0, 50)) for i in range(N)]
+array = [round(random.uniform(0, 50), 2) for i in range(10)]
 print(array)
 
 

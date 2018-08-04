@@ -3,12 +3,13 @@
 # Вывести на экран исходный и отсортированный массивы.
 import random
 
-N = 20
-array = [int(random.randint(-100, 100)) for i in range(N)]
+
+array = [int(random.randrange(-100, 100)) for i in range(20)]
 print(array)
 
 
 def sort_bubble(array):
+    N = 20
     n = 1
     while n < N:
         for i in range(N - n):
